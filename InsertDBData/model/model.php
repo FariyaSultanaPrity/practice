@@ -28,6 +28,39 @@ class DB{
 
     }
 
+    function FetchData($tablename,$conn){
+        $sqlstr="SELECT * from $tablename";
+        $results=$conn->query($sqlstr);
+        
+         
+        return $results;  
+        
+    }
+    function searchData($tablename,$conn,$fname){
+
+        $sqlstr="SELECT * FROM $tablename WHERE fname='$fname'";
+        $results=$conn->query($sqlstr);
+        
+         
+        return $results;  
+    }
+
+
+
+
+    function updateData($tablename,$conn,$fname,$lname,$age){
+        $sqlstr="UPDATE $tablename SET fname='$fname', lname='$lname', age=$age WHERE fname='$fname'";
+        if($conn->query($sqlstr)===TRUE){
+        
+            echo "Data Updated";
+            
+            
+            }
+            else{
+                echo "cant update".$conn->error;
+            }
+
+    }
    function closecon($conn){
     $conn->close();
    }
