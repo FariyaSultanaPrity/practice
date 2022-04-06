@@ -4,7 +4,19 @@ include ("../control/RegistrationCheck.php")
 
 
 <html>
+    <head>
+        <link  rel="stylesheet" type="text/css" href="../css/css.css">
+
+</head>
 <body>
+    <div class="position">
+<p>hellow world</p>
+</div>
+
+
+
+
+
 <form action="" method="post">  
 
 First Name:
@@ -16,7 +28,9 @@ Age:
 Salary:
 <input type="number" name="salary"> </br>
 
-<input type="submit" name="Submit"> </br>
+<input type="submit" class="button submitbutton" name="Submit"> 
+
+</br>
 </form>
 
 </body>

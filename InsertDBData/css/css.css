@@ -1,0 +1,32 @@
+
+
+
+
+
+.button{
+
+
+
+    margin: 5px;
+    border-radius: 5px solid black;
+    padding: 5px;
+    width: 80px;
+}
+
+.submitbutton{
+background-color: green;
+
+
+
+}
+.resetbutton{
+    color : black;
+    background-color: red;
+}
+
+div.position{
+
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
